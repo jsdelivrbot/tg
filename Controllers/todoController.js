@@ -26,9 +26,25 @@ app.get('/todo', function (req,res) {
   // get data from moongo and pass it to view
   Todo.find({}, function (err,data) {
     if(err) throw err;
-    res.render('todo', {todos:data});
+    res.render('editor', {todos:data}); /*todo*/
   });
 });
+app.get('/nav', function (req,res) {
+  res.render('skin'); /*todo*/
+  // get data from moongo and pass it to view
+  // Todo.find({}, function (err,data) {
+  //   if(err) throw err;
+  // });
+});
+
+// app.get('/todo', function (req,res) {
+//   // get data from moongo and pass it to view
+//   Todo.find({}, function (err,data) {
+//     if(err) throw err;
+//     res.render('todo', {todos:data}); /*todo*/
+//   });
+// });
+
 
 app.post('/todo', urlencodedParser,function (req,res) {
 // get data from the view and add it to mongodb

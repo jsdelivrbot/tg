@@ -1,0 +1,69 @@
+{
+height: 90%;
+}
+body {
+background-color: white;
+min-height: 90%;
+}
+td {
+/*background-color: #ebebeb;*/
+min-height: 100%;
+max-width: 4px;
+max-height: 480px;
+}
+table{
+background-color: white/*#00a572*/;
+min-height: 100%;
+}
+#The_Book_Title{
+  background-color: white;
+
+}
+/*#Mesenger_Title{
+  background-color: lightgray;
+}*/
+
+#Old_book { /*iframe*/
+border-style: none;
+width: 100%;
+height: 600px;
+min-width: 250px;
+min-height: 70%;
+}
+
+/*  editor    */
+#Editor{
+height: 480px;
+width: 450px;
+min-width: 350px;
+min-height: 70%;
+background: white;
+}
+#Editor_iframe { /*iframe*/
+border-style: none;
+width: 100%;
+height: 380px;
+min-width: 250px;
+min-height: 70%;
+float: left;
+}
+/*  editor    */
+/*  textarea    */
+textarea:focus {
+background: lightgray;
+outline: none;
+color:gray;
+}
+textarea {
+  resize:none ;
+  width: 100%;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+  float: right;
+}
+
+/*  textarea    */
+
+/* Editor */
+/* Editor */

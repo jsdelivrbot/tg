@@ -1,0 +1,101 @@
+<html>
+  <head>
+    <!-- nav style (logo icon) -->
+    <link rel="stylesheet" href="public/assets/css/navigation.css" type="text/css">
+    <!-- nva sytle sheet (logo icon) -->
+  </head>
+<body>
+
+  <div id="msg_stiker">
+    <a href="#"><img src="/public/assets/icon/msg-e.png" border="0" width="40px" style="float:right;padding-left:;" title="Under Development" title="Under Development"></a>
+  </div>
+
+
+
+  <div id="target"style="height" >
+
+    <!-- nav -->
+    <div class="dropdown">
+      <img onclick="myFunction()" class="dropbtn" src="/public/assets/icon/icon_sq.png" border="0"width="50px" style="float:left;margin-left:-20%;">
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#about">Profile</a>
+        <a id="this_page" href="#home">Library</a>
+        <a href="#about">Editor <!-- <img src="file:///Users/mac/Desktop/beta-tg/icon/editor.png" border="0" width="10px" style="" > --></a>
+        <a href="#contact" title="Under Development">Community <img src="/public/assets/icon/inbeta.png" border="0"width="8px" style="" title="Under Development"></a>
+        <a href="#contact" title="Under Development">Explore <img src="/public/assets/icon/inbeta.png" border="0"width="8px" style="" title="Under Development"></a>
+      </div>
+    </div>
+  <!-- nav -->
+
+    <table style="width:80%;float:left;padding-left:9%;" >
+      <tr id="nav_color" style="background-color: white;height:48px;" >
+        <td>
+          <!--<img src="file:///Users/mac/Desktop/beta-tg/icon/home-b.png" border="0"width="48px" style="float:left;" title="Under Development">-->
+        </td>
+        <td>
+          <!-- profile -->
+          <img  src="/public/assets/icon/profile.png" border="0"width="40px" style="float:right;padding-left:20px;" title="Under Development">
+          <!-- proflie -->
+          <img src="/public/assets/icon/notification-b.png" border="0"width="48px" style="float:right;padding-left:;" title="Under Development">
+        </td>
+      </tr>
+    </table>
+  </div>
+
+
+
+
+
+
+
+<!-- boody -->
+
+
+
+<!-- body -->
+
+
+                       </div>
+
+
+
+<!-- Drop Down -->
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+
+<!-- Drop Down -->
+<!-- profile -->
+
+
+
+<!-- Profile -->
+
+
+
+
+
+
+</body>
+</html>

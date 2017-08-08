@@ -1,0 +1,115 @@
+<html>
+<head>
+
+
+    <!-- favicon -->
+
+    <link rel="apple-touch-icon" sizes="57x57" href="file:///Users/mac/Desktop/beta-tg/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="file:///Users/mac/Desktop/beta-tg/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="file:///Users/mac/Desktop/beta-tg/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="file:///Users/mac/Desktop/beta-tg/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="file:///Users/mac/Desktop/beta-tg/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="file:///Users/mac/Desktop/beta-tg/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="file:///Users/mac/Desktop/beta-tg/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="file:///Users/mac/Desktop/beta-tg/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="file:///Users/mac/Desktop/beta-tg/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="file:///Users/mac/Desktop/beta-tg/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="file:///Users/mac/Desktop/beta-tg/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="file:///Users/mac/Desktop/beta-tg/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="file:///Users/mac/Desktop/beta-tg/favicon-16x16.png">
+    <link rel="manifest" href="file:///Users/mac/Desktop/beta-tg/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="file:///Users/mac/Desktop/beta-tg/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- favicon -->
+
+  <style>
+
+  </style>
+
+<meta charset="utf-8">
+<title>Editor - TG</title>
+
+<script
+src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
+</script>
+
+<link rel="stylesheet" type="text/css" href="/public/assets/styles.css">
+<link rel="stylesheet" type="text/css" href="/public/assets/styles_ed.css">
+
+<!-- from todo -->
+
+<script
+src="http://code.jquery.com/jquery-3.2.1.min.js"
+integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="/public/assets/styles.css">
+<!--  <link rel="stylesheet" type="text/css" href="/public/assets/styles.css"> -->
+
+<!-- from todo -->
+
+
+</head>
+<body>
+
+
+<% include partials/nav.ejs %>
+
+  <table style="width:100%;padding-top:5%;">
+    <tr>
+      <th><div id="The_Book_Title">The Book</div></th>
+      <th><div id="Editor_Title">Editor</div></th>
+      <th><div id="Mesenger_Title">Dictinary </div></th>
+    </tr>
+    <tr>
+      <td id="The_Book_Title">
+
+        <iframe src="../views/surpport/Old_book.html" name='iframe1' id="Old_book"
+        frameborder="0" border="0" cellspacing="0">
+          </iframe>
+
+              </td>
+      <td id="Editor">
+        <iframe src="../views/surpport/Old_book.html" name='iframe1' id="Editor_iframe"
+        frameborder="0" border="0" cellspacing="0">
+          </iframe>
+
+
+          <form>
+<button type="submit" >save</button>
+            <textarea placeholder="Add translation" name="item" class="input"
+                rows="8" cols="80" required ></textarea>
+            <!-- <input type="text" name="item" placeholder="Add new item... " > -->
+
+
+          </form>
+<!--
+          <textarea placeholder="Enter translation" name="descrip" class="input"  style="width:230px;
+              height:180px;
+              width:100%;
+              background-color:white;
+              border-radius: 2px;
+          	border: 1px solid gray;
+              border-radius: 2px;
+              background-color: #f2f2f2;
+              padding: 20px;
+              border:0px solid #008800;" rows="4" cols="50" name="comment" form="usrform"></textarea> -->
+
+
+
+
+
+      </td>
+      <td></td>
+    </tr>
+
+  </table>
+
+<!-- from todo -->
+<% include partials/footer.ejs %>
+<script src="/public/assets/todo-list.js"></script>
+
+<!-- from todo -->
+</body>
+</html>
