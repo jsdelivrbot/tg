@@ -1,0 +1,154 @@
+<html>
+<head>
+  <style>
+  {
+  height: 90%;
+}
+body {
+  background-color: white;
+  min-height: 90%;
+}
+td {
+  background-color: #00cccc;
+  min-height: 100%;
+  max-width: 4px;
+  max-height: 480px;
+}
+table{
+  background-color: white/*#00a572*/;
+  min-height: 100%;
+}
+#The_Book_Title{
+    background-color: white;
+
+}
+
+#Old_book { /*iframe*/
+  border-style: none;
+  width: 100%;
+  height: 680px;
+  min-width: 250px;
+  min-height: 70%;
+}
+
+/*  editor    */
+#Editor{
+  height: 480px;
+  width: 450px;
+  min-width: 350px;
+  min-height: 70%;
+  background: white;
+}
+#Editor_iframe { /*iframe*/
+  border-style: none;
+  width: 100%;
+  height: 500px;
+  min-width: 250px;
+  min-height: 70%;
+  float: left;
+}
+/*  editor    */
+/*  textarea    */
+textarea:focus {
+  background: lightgray;
+  outline: none;
+  color:gray;
+}
+textarea {
+    resize:none ;
+    width: 100%;
+  }
+  input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/*  textarea    */
+
+/* Editor */
+
+<meta charset="utf-8">
+<title>Editor - TG</title>
+
+<script
+src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
+</script>
+
+<link rel="stylesheet" type="text/css" href="/public/assets/styles.css">
+<link rel="stylesheet" type="text/css" href="/public/assets/styles.css">
+
+/* Editor */
+
+  </style>
+</head>
+<body>
+
+
+
+
+<!--  -->
+<ul>
+
+<% for(var i=0; i < todos.length; i++){ %>
+  <li><%= todos[i].item %></li>
+<% } %>
+</ul>
+
+<form>
+
+  <textarea name="item" rows="8" cols="80" required ><p>text</p></textarea>
+  <!-- <input type="text" name="item" placeholder="Add new item... " > -->
+  <button type="submit" >save</button>
+
+</form>
+<!--  -->
+
+
+
+
+
+  <table style="width:100%">
+    <tr>
+      <th><div id="The_Book_Title">The Book</div></th>
+      <th><div id="Editor_Title">Editor</div></th>
+      <th><div id="Mesenger_Title">Mesenger</div></th>
+    </tr>
+    <tr>
+      <td id="The_Book_Title">
+
+        <iframe src="file:///Users/mac/Desktop/beta-tg/App/views/surpport/Old_book.html" name='iframe1' id="Old_book"
+        frameborder="0" border="0" cellspacing="0">
+          </iframe>
+
+              </td>
+      <td id="Editor">
+        <iframe src="file:///Users/mac/Desktop/beta-tg/App/views/surpport/Editor.html" name='iframe1' id="Editor_iframe"
+        frameborder="0" border="0" cellspacing="0">
+          </iframe>
+
+
+
+          <textarea placeholder="Enter translation" name="descrip" class="input"  style="width:230px;
+              height:180px;
+              width:100%;
+              background-color:white;
+              border-radius: 2px;
+          	border: 1px solid gray;
+              border-radius: 2px;
+              background-color: #f2f2f2;
+              padding: 20px;
+              border:0px solid #008800;" rows="4" cols="50" name="comment" form="usrform"></textarea>
+
+
+
+
+
+      </td>
+      <td>50</td>
+    </tr>
+
+  </table>
+
+
+
+</body>
+</html>
