@@ -1,17 +1,8 @@
-var express = require('express');
-const todoController = require('./Controllers/todoController');
-
-var app = express();
-
-
-app.set('view engine', 'ejs');
-// app.use(express.static('./public'));
-app.use(express.static('/Users/mac/Desktop/beta-tg/App/'));
-
-
-
-todoController(app);
-
-
-app.listen(3000);
-console.log('listening to port 3000 <<<')
+{
+  "name": "Start on Heroku: Node.js",
+  "description": "A barebones Node.js app using Express 4",
+  "repository": "https://github.com/heroku/node-js-getting-started",
+  "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/master/public/node.svg",
+  "keywords": ["node", "express", "heroku"],
+  "image": "heroku/nodejs"
+}
