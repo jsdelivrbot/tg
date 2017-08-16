@@ -1,17 +1,18 @@
 var express = require('express');
-const todoController = require('./Controllers/todoController');
-
 var app = express();
 
+app.set('port', (process.env.PORT || 5000));
 
+app.use(express.static(__dirname + '/public'));
+
+// views is directory for all template files
+app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
-// app.use(express.static('./public'));
-app.use(express.static('/Users/mac/Desktop/beta-tg/App/'));
 
+app.get('/', function(request, response) {
+  response.render('pages/index');
+});
 
-
-todoController(app);
-
-
-app.listen(3000);
-console.log('listening to port 3000 <<<')
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
+});
