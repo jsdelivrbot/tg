@@ -1,1 +1,1 @@
-web: node Controllers/todoControler.js
+web: node index.js
